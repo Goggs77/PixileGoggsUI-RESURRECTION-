@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RootNamespace>PixileGoggsUI__RESURRECTION_</RootNamespace>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Z.Expressions.Eval" Version="5.0.3" />
+        <Resource Include="Resources\Icons\FourierGoggs.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\Backup" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\net6.0-windows\config.json" />
+      <Content Include="bin\Debug\net6.0-windows\log.txt" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\app.config" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Fonts\NotoSans-Black.ttf" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Fonts\NotoSans-Bold.ttf" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Fonts\NotoSans-Italic.ttf" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Fonts\NotoSans-Light.ttf" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Fonts\NotoSans-Regular.ttf" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Icons\FourierGoggs.ico" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Icons\FourierGoggs.png" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Images\BG.png" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Images\test.png" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Stasis\AllPartsAllTypes" />
+      <Content Include="bin\Debug\net6.0-windows\Resources\Stasis\Stasis.mp3" />
+      <Content Include="bin\Debug\net6.0-windows\savefile.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="bin\Debug\net6.0-windows\app.config" />
+    </ItemGroup>
+
+</Project>

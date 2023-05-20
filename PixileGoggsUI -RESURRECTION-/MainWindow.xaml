@@ -1,0 +1,243 @@
+﻿<Window x:Class="PixileGoggsUI__RESURRECTION_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        mc:Ignorable="d"
+        Title="PixileGoggsUI -RESURRECTION-" Height="850" Width="1550"
+        ResizeMode="CanMinimize" d:DataContext="{d:DesignInstance }"
+        Loaded="MainWindow_OnLoaded"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Icon="pack://siteoforigin:,,,./Resources/Icons/FourierGoggs.png"
+        >
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+        <BeginStoryboard>
+            <Storyboard>
+                <DoubleAnimation Storyboard.TargetProperty="Left" From="-1000" To="0" Duration="0:0:0.8" FillBehavior="HoldEnd" >
+                    <DoubleAnimation.EasingFunction>
+                        <SineEase EasingMode="EaseInOut" 
+                                    />
+                    </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+            </Storyboard>
+        </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Window.Background>
+        <SolidColorBrush Opacity="0.7313051" Color="#1f1e33"/>
+    </Window.Background>
+    
+    
+    <Grid Background="Transparent" >
+        <Image Width="35" Source="pack://siteoforigin:,,,./Resources/Icons/FourierGoggs.png" Margin=" 18 6" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="Stasis"></Image>
+        <TextBlock Foreground="Silver" FontSize="23" Margin="60,10,10,10" MouseLeftButtonDown="MainBoarder_OnMouseDown">PixileGoggsUI -RESURRECTION-</TextBlock>
+        <TextBlock Foreground="Silver" FontSize="22" Margin="-380,10,10,750" Width="100" MouseLeftButtonDown="About">About</TextBlock>
+        <TextBlock Foreground="Silver" FontSize="22" Margin="-590,10,10,750" Width="100" MouseLeftButtonDown="Switch">Switch</TextBlock>
+        <TextBlock Foreground="Silver" FontSize="22" Margin="-170,10,10,750" Width="100" MouseLeftButtonDown="Help">Help</TextBlock>
+        <TextBlock Foreground="Silver" FontSize="22" Margin="1420,10,10,750" Width="100" MouseLeftButtonDown="Quit">Quit</TextBlock>
+        <Rectangle Fill="MediumPurple" Margin="10 50 10 10"  Opacity="0.5"/>
+        
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60" Width="800" Height="400" Name="MajorPlotPanel" Background="Lavender">
+            <Grid Background="Lavender"  Margin="5" Name="MajorPlotInput">
+                
+                <TabControl Name="PlottingPanel">
+                    <TabItem Header="Function Plotting" FontSize="15">
+                        <GroupBox Name="N1" Header="Arguments" FontSize="15" Margin="10 10 600 10">
+                            <StackPanel Margin="5">
+                                <TextBlock Margin="2">y = Function x:</TextBlock>
+                                <TextBox Margin="2" Name="YFunction" MaxLength="50" Height="60" AllowDrop="True">x*x+4</TextBox>
+                                <TextBlock Margin="2 8">Optional:</TextBlock>
+                                <TextBlock Margin="2">Origin X:</TextBlock>
+                                <TextBox Margin="2" Name="YOriginX">0</TextBox>
+                                <TextBlock Margin="2">Origin Y:</TextBlock>
+                                <TextBox Margin="2" Name="YOriginY">0</TextBox>
+                                <TextBlock Margin="2">Scale Factor:</TextBlock>
+                                <TextBox Margin="2" Name="YScaleFactor">1</TextBox>
+                                <Button Margin="3" Name="TestYFunction" Content="Test"></Button>
+                            </StackPanel>
+                        </GroupBox>
+                        
+                    </TabItem>
+                    <TabItem Header="Polar Function Plotting" FontSize="15">
+                        <GroupBox Header="Arguments" FontSize="15" Margin="10 10 600 10">   
+                            <StackPanel Margin="5">
+                                <TextBlock Margin="2">r = Function a:</TextBlock>
+                                <TextBox Margin="2" Name="RFunction" MaxLength="50" Height="60" AllowDrop="True">Sin(2*a)</TextBox>
+                                <TextBlock Margin="2 8">Optional:</TextBlock>
+                                <TextBlock Margin="2">Origin X:</TextBlock>
+                                <TextBox Margin="2" Name="ROriginX">0</TextBox>
+                                <TextBlock Margin="2">Origin Y:</TextBlock>
+                                <TextBox Margin="2" Name="ROriginY">0</TextBox>
+                                <TextBlock Margin="2">Scale Factor:</TextBlock>
+                                <TextBox Margin="2" Name="RScaleFactor">1</TextBox>
+                                <Button Margin="3" Name="TestRFunction" Content="Test"></Button>
+                            </StackPanel>                             
+                        </GroupBox>                                    
+                    </TabItem>
+                    <TabItem Header="Parametric Function Plotting" FontSize="15">
+                        <GroupBox Header="Arguments" FontSize="15" Margin="10 10 600 10">   
+                            <StackPanel Margin="5">
+                                <TextBlock Margin="2">x = F(t):</TextBlock>
+                                <TextBox Margin="2 0 2 0" Name="XpFunction"  AllowDrop="True">Sin(t)</TextBox>
+                                <TextBlock Margin="2">y = F(t):</TextBlock>
+                                <TextBox Margin="2 2 2 0" Name="YpFunction"  AllowDrop="True">t</TextBox>
+                                <TextBlock Margin="2 6">Optional:</TextBlock>
+                                <TextBlock Margin="2">Origin X:</TextBlock>
+                                <TextBox Margin="2" Name="POriginX">0</TextBox>
+                                <TextBlock Margin="2">Origin Y:</TextBlock>
+                                <TextBox Margin="2" Name="POriginY">0</TextBox>
+                                <TextBlock Margin="2">Scale Factor:</TextBlock>
+                                <TextBox Margin="2" Name="PScaleFactor">1</TextBox>
+                                <Button Margin="3" Name="TestPFunction" Content="Test"></Button>
+                            </StackPanel>                             
+                        </GroupBox>                                    
+                    </TabItem>
+                    <TabItem Header="Equation Plotting" FontSize="15">
+                        <GroupBox Header="Plotting equation of x and y" FontSize="12" Margin="2 2 608 2">
+                            <StackPanel>
+                                <TextBlock Margin="1">Equation Left:</TextBlock><TextBox Margin="2" Name="EquationLeft">Log(x)</TextBox>
+                                <TextBlock Margin="1">Equation Right:</TextBlock><TextBox Margin="2" Name="EquationRight">Tan(x*y)</TextBox>
+                                <TextBlock Margin="1">Threshold:</TextBlock><TextBox Margin="2" Name="Threshold">0.06</TextBox>
+                                <TextBlock Margin="1">Start X:</TextBlock><TextBox Margin="2" Name="EquationX1">0</TextBox>
+                                <TextBlock Margin="1">Start Y:</TextBlock><TextBox Margin="2" Name="EquationY1">0</TextBox>
+                                <TextBlock Margin="1">Scale Factor:</TextBlock><TextBox Margin="2" Name="EquationScaleFactor">10</TextBox>
+                                <TextBlock Margin="1">X Range:</TextBlock><TextBox Margin="2" Name="EquationXRange">0,5</TextBox>
+                                <TextBlock Margin="1">Y Range:</TextBlock><TextBox Margin="2" Name="EquationYRange">0,5</TextBox>
+                                <Button Content="Test" Name="TestEquation"></Button>
+                            </StackPanel>
+                        </GroupBox>
+                    </TabItem>
+                    <TabItem Header="Complex Plot" FontSize="15">
+                        <GroupBox Header="Options" FontSize="15" Margin="10 10 600 10">
+                            <StackPanel Margin="1">
+                                <Button Content="Open Complex Window" Name="OpenComplex" FontSize="12"></Button>
+                                <Button Content="Open 3D Render Window" Name="Open3D" FontSize="12"></Button>
+                            </StackPanel>
+                        </GroupBox>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+            <GroupBox Header="Test Plot" Margin="200 43 420 19" FontSize="15">
+                <Canvas Name="Canvas" Background="AliceBlue" Margin="5">
+                </Canvas>
+            </GroupBox>
+            <GroupBox Header="Additional Options" Margin="387 43 15 19" FontSize="15">
+                <StackPanel Margin="5">
+                    <TextBlock Margin="2">Part Type:</TextBlock><TextBox Margin="2" Name="PartType">6</TextBox>
+                    <TextBlock Margin="2">Part Rotation:</TextBlock><TextBox Margin="2" Name="Rotation">0</TextBox>
+                    <TextBlock Margin="2">Color:</TextBlock><TextBox Margin="2" Name="Color">42</TextBox>
+                    <TextBlock Margin="2">UpperLimit:</TextBlock><TextBox Margin="2" Name="UpperLimit">100</TextBox>
+                    <TextBlock Margin="2">LowerLimit:</TextBlock><TextBox Margin="2" Name="LowerLimit">-100</TextBox>
+                    <CheckBox Content="Plot Origin" Margin="2" Name="PlotOrigin"></CheckBox>
+                    <CheckBox Content="Better Precision(Ultra slow!)" Margin="2" Name="SlowMode"></CheckBox>
+                    <TextBlock Name="Etp" Width="300" HorizontalAlignment="Left">Etp:</TextBlock>
+                </StackPanel>
+            </GroupBox>
+            <Button Margin="660 320 16 20" Content="Plot" FontSize="15" Name="Plot"></Button>
+        </Grid>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60" Width="800" Height="400" Name="ShapePlotPanel" Background="Lavender">
+            <Grid Background="Lavender"  Margin="5" Name="ShapePlotInput">
+                <TabControl Name="ShapePlottingTabControl">
+                    <TabItem Header="Rectangle" FontSize="15">
+                        <GroupBox Header="Coordinate + Length and Width Mode:" FontSize="15" Margin="10 10 10 10">
+                            <StackPanel Margin="5">
+                                <TextBlock Margin="1">X1:</TextBlock><TextBox Margin="2" Name="RecClwX1">0</TextBox>
+                                <TextBlock Margin="1 ">Y1:</TextBlock><TextBox Margin="2" Name="RecClwY1">0</TextBox>
+                                <TextBlock Margin="1">Length:</TextBlock><TextBox Margin="2" Name="RecClwL">100</TextBox>
+                                <TextBlock Margin="1">Height:</TextBlock><TextBox Margin="2" Name="RecClwW">100</TextBox>
+                                <TextBlock Margin="1">Color:</TextBlock><TextBox Margin="2" Name="RecClwColor">6</TextBox>
+                                <TextBlock Margin="1">Part Type:</TextBlock><TextBox Margin="2" Name="RecClwPt">6</TextBox>   
+                                <CheckBox Margin="1" Name="RecCorFill">Fill ?</CheckBox>
+                                <Button Width="100" Height="25" Margin="0 -20 2 0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Draw"
+                                        Name="RecClw"></Button>
+                            </StackPanel>
+                        </GroupBox>
+                    </TabItem>
+                    <TabItem Header="Random Starship Outline" FontSize="15">
+                        <StackPanel Margin="5">
+                            <TextBlock Margin="1">X1:</TextBlock><TextBox Margin="2" Name="RndSx1">0</TextBox>
+                            <TextBlock Margin="1 ">Y1:</TextBlock><TextBox Margin="2" Name="RndSy1">0</TextBox>
+                            <TextBlock Margin="1 ">Size:</TextBlock><TextBox Margin="2" Name="RndSize">47</TextBox>
+                            <TextBlock Margin="1 ">Y-Axis Scale Factor(Stretch):</TextBlock><TextBox Margin="2" Name="RndYsf">0.5</TextBox>
+                            <TextBlock Margin="1 ">Steps(Edges):</TextBlock><TextBox Margin="2" Name="RndStep">7</TextBox>
+                            <TextBlock Margin="1 ">Seed:</TextBlock><TextBox Margin="2" Name="RndSeed">5674</TextBox>
+                            <TextBlock Margin="1">Color:</TextBlock><TextBox Margin="2" Name="RndSColor">6</TextBox>
+                            <Button Width="100" Height="25" Margin="0 -20 2 0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Draw"
+                                    Name="RndS"></Button>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </Grid>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60" Width="800" Height="400" Name="TextRenderPanel" Background="Lavender">
+            <Grid Background="White"  Margin="15" Name="TextRenderInput">
+                <GroupBox Header="Text Input" FontSize="15" HorizontalAlignment="Left" Width="200">
+                    <TextBox Margin="2" Name="TextRenderContent" TextWrapping="Wrap" AcceptsReturn="True">lorem ipsum</TextBox>
+                </GroupBox>
+                <GroupBox Header="Configurations" FontSize="15" HorizontalAlignment="Center" Width="370">
+                    <StackPanel Margin="2">
+                        <TextBlock>Start X:</TextBlock><TextBox Name="TextRenderStartX">0</TextBox>
+                        <TextBlock>Start Y:</TextBlock><TextBox Name="TextRenderStartY">0</TextBox>
+                        <TextBlock>Color:</TextBlock><TextBox Name="TextRenderColor">120</TextBox>
+                        <TextBlock>Line Length(pixels):</TextBlock><TextBox Name="TextRenderPixelLimit">377</TextBox>
+                        <Expander Header="Fonts" Margin="2">
+                            <StackPanel Margin="2">
+                                <RadioButton Margin="2" Content="5x5 Pixile Goggs (non-ascii)" Name="_5b5PG"></RadioButton>
+                                <RadioButton Margin="2" Content="9x16 Pixile Anstro" Name="_9b16PA" IsChecked="True"></RadioButton>
+                            </StackPanel>
+                        </Expander>
+                    </StackPanel>
+                </GroupBox>
+                <Button Name="DrawText" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="196" Height="98" Margin="2" Content="Draw Text" FontSize="15"></Button>
+            </Grid>  
+        </Grid> 
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="60 43 15 60" Width="800" Height="330" Background="Lavender">
+            <Grid Margin="5 5" Background="White" Width="398" HorizontalAlignment="Left">
+                <Rectangle Stroke="#dcdde1" StrokeThickness="2"></Rectangle>
+                <TextBlock FontSize="15" Margin="4">Saves Selector</TextBlock>
+                <ListView Name="SavesListView" Margin="2 25 2 2" MouseRightButtonUp="SavesListView_OnMouseRightButtonUp">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" Width="20"/>
+                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="200"/>
+                            <GridViewColumn Header="Size" DisplayMemberBinding="{Binding FileSize}" Width="170"></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                    
+                </ListView>
+            </Grid>
+            <Grid HorizontalAlignment="Right" Background="White" Margin=" 5 5" Width="380">
+                <Rectangle Stroke="#dcdde1" StrokeThickness="2"></Rectangle>
+                <TextBlock FontSize="15" Margin="4">Options</TextBlock>
+                <Button Name="CopyNoBackup" Margin="4 25 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Copy to selected file</Button>
+                <Button Name="Refresh" Margin="4 80 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Refresh</Button>
+                <Button Name="Check" Margin="4 136 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Check savefile.txt status</Button>
+                <Button Name="Clear" Margin="4 192 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Clear savefile.txt</Button>
+                <Button Name="ClearBackup" Margin="4 248 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Clear all backups</Button>
+                <Button Name="Backup" Margin="216 25 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Backup every single save</Button>
+                <Button Name="ViewSaveFileTxt" Margin="216 80 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">View savefile.txt</Button>
+                <Button Name="DebugAllParts" Margin="216 136 4 4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="160">Check Every Parts</Button>
+            </Grid>
+        </Grid>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Right" Margin="60" Width="630" Height="780" Name="Manuel" Background="Lavender">
+            <Rectangle Stroke="#dcdde1" StrokeThickness="2" Fill="White" Margin="2" Height="670">
+            </Rectangle>
+            <Grid HorizontalAlignment="Left" Width="400" Margin="2" Height="759">
+                <TextBlock FontSize="15" Margin="4">Recent Operations</TextBlock>
+                <ListView Name="OperationListView" Margin="6 25 2 50">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" Width="20"/>
+                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="369">
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+            <TextBox Name="InstructionBox" HorizontalAlignment="Right" Width="220" Margin="6" Height="660" Foreground="#1f1e33" Background="Azure" IsReadOnly="True"></TextBox>
+        </Grid> 
+    </Grid>
+</Window>

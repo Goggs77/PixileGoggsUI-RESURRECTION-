@@ -1,0 +1,38 @@
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.exe
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.deps.json
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.runtimeconfig.json
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.pdb
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\Z.Expressions.Eval.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.csproj.AssemblyReference.cache
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\MainWindow.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\App.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-_MarkupCompile.cache
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-_MarkupCompile.lref
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\MainWindow.baml
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.g.resources
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.GeneratedMSBuildEditorConfig.editorconfig
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.AssemblyInfoInputs.cache
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.AssemblyInfo.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.csproj.CoreCompileInputs.cache
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.csproj.CopyComplete
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\refint\PixileGoggsUI -RESURRECTION-.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.pdb
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.genruntimeconfig.cache
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\ref\PixileGoggsUI -RESURRECTION-.dll
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-_Content.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\bin\Debug\net6.0-windows\PixileGoggsUI -RESURRECTION-.dll.config
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\FileView.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\FileView.baml
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\HelpPage.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\HelpPage.baml
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\ComplexPlot.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\ComplexPlot.baml
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\LinearARender.g.cs
+I:\Goggs\Works\csharp\PixileGoggsUI -RESURRECTION-\PixileGoggsUI -RESURRECTION-\obj\Debug\net6.0-windows\LinearARender.baml

@@ -1,0 +1,42 @@
+﻿<Window x:Class="PixileGoggsUI__RESURRECTION_.FileView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:PixileGoggsUI__RESURRECTION_"
+        mc:Ignorable="d"
+        Title="FileView" Height="477" Width="800"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip"
+        AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Opacity="0.7313051" Color="#1f1e33"/>
+    </Window.Background>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetProperty="Left" From="-1000" To="0" Duration="0:0:0.8" FillBehavior="HoldEnd" >
+                        <DoubleAnimation.EasingFunction>
+                            <SineEase EasingMode="EaseInOut" 
+                            />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid Margin="0 0 0 427">
+            
+            <TextBlock Name="Title" HorizontalAlignment="Left" Width="660" Foreground="Silver" FontSize="15" Margin="2 3 0 0" MouseLeftButtonDown="Drag"></TextBlock>
+            <TextBlock MouseLeftButtonUp="ExitWindow" Name="Exit" HorizontalAlignment="Right" Width="20" Foreground="Silver" FontSize="15" Margin="2 3 0 0">X</TextBlock>
+            <TextBlock MouseLeftButtonUp="SaveToFile" Name="Save" HorizontalAlignment="Right" Width="60" Foreground="Silver" FontSize="15" Margin="2 3 60 0">Save</TextBlock>
+        </Grid>
+        <Grid Margin="0 27 0 0">
+            <TextBox Name="FileTextBox" VerticalScrollBarVisibility="Visible" Background="#1f1e33" Opacity="0.82" Foreground="#f4f4f8" AllowDrop="True" AcceptsTab="True" AcceptsReturn="True"></TextBox>
+        </Grid>
+        
+    </Grid>
+    
+</Window>
